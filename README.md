@@ -1,0 +1,2 @@
+# SQLi-detector
+SQLi scanner 
