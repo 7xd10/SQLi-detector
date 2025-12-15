@@ -19,6 +19,17 @@ git clone https://github.com/yourusername/advanced-sql-scanner.git
 
 cd advanced-sql-scanner
 
+-d, --domain      Target domain to scan (required)
+--max-depth       Maximum crawl depth (default: 10)
+--threads         Number of concurrent threads (default: 10)
+--timeout         Request timeout in seconds (default: 30)
+--verify-ssl      Verify SSL certificates (default: False)
+--user-agent      Custom User-Agent string
+--log-level       Logging level [DEBUG|INFO|WARNING|ERROR]
 
 # Install dependencies
 pip install -r requirements.txt
+
+### 1. Simple Scan
+
+python sql_scanner.py -d testphp.vulnweb.com
