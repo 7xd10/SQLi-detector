@@ -1,5 +1,5 @@
-<img width="810" height="765" alt="2" src="https://github.com/7xd10/SQLi-detector/1.png" />
-<img width="811" height="756" alt="1" src="https://github.com/7xd10/SQLi-detector/2.png" />
+<img width="810" height="765" alt="2" src="https://github.com/7xd10/SQLi-detector/1.PNG" />
+<img width="811" height="756" alt="1" src="https://github.com/7xd10/SQLi-detector/2.PNG" />
 # Advanced SQL Injection Scanner 🔍
 
 A professional-grade SQL injection vulnerability scanner with recursive crawling capabilities. Designed for penetration testers, security engineers, and bug bounty hunters.
