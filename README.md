@@ -16,7 +16,9 @@ A professional-grade SQL injection vulnerability scanner with recursive crawling
 
 # Clone the repository
 git clone https://github.com/yourusername/advanced-sql-scanner.git
+
 cd advanced-sql-scanner
+
 
 # Install dependencies
 pip install -r requirements.txt
