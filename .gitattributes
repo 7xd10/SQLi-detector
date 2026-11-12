@@ -1,0 +1,23 @@
+# Normalise line endings in the repository; checkouts get LF everywhere.
+# A mixed-ending Python file breaks the ruff-format hook and shows up as a
+# whole-file diff for whoever opens it next.
+* text=auto eol=lf
+*.py     text eol=lf
+*.pyi    text eol=lf
+*.toml   text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.md     text eol=lf
+*.sh     text eol=lf
+*.cfg    text eol=lf
+*.txt    text eol=lf
+LICENSE  text eol=lf
+Makefile text eol=lf
+Dockerfile text eol=lf
+
+# Binary artefacts must never be normalised or diffed as text.
+*.whl    binary
+*.gz     binary
+*.png    binary
+*.jpg    binary
+*.ico    binary
