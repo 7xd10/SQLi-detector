@@ -35,8 +35,9 @@ findings
 summary  1 confirmed | 0 likely | 0 suspected
 ```
 
-That output is pasted from a real run, with one `why` line and one excerpt line
-that the terminal would wrap — the table is left exactly as the tool printed it.
+That output is pasted from a real run. The `why` line and the two excerpt
+lines are longer than this column, so they wrap in a browser; the tool prints
+them as single lines.
 
 ---
 
@@ -348,7 +349,8 @@ Types are shipped (`py.typed`) and the package is checked with mypy `--strict`.
 
 ## Report shapes
 
-`-f json` (real output, values trimmed for length)
+`-f json` — the shape below is from a real run; the target is a local test
+server, shown here as `example.com`.
 
 ```json
 {
@@ -425,6 +427,19 @@ Types are shipped (`py.typed`) and the package is checked with mypy `--strict`.
           "elapsed_ms": 43.299,
           "matched": [],
           "excerpt": ""
+        },
+        {
+          "request": "GET /product?id=1%27 HTTP/1.1",
+          "payload": "1'",
+          "status": 500,
+          "length": 174,
+          "content_type": "text/html; charset=utf-8",
+          "elapsed_ms": 43.57,
+          "matched": [
+            "You have an error in your SQL syntax",
+            "check the manual that corresponds to your (?:MariaDB|MySQL) server version"
+          ],
+          "excerpt": "<html><body>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right s"
         }
       ]
     }
